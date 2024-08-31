@@ -1,0 +1,23 @@
+
+@import '../../styles/variables.scss';
+
+.background {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+}
+
+.circle {
+    position: absolute;
+    border: 1px solid $color-secondary; /* Biały okrąg */
+    border-radius: 50%;
+    right: -50px; /* Przesunięcie okręgu poza ekran z prawej strony */
+    transform: translateY(-50%); /* Środek okręgu jest na pozycji top */
+    opacity: 0.4
+}
+
+.content {
+    position: relative;
+    // z-index: 1; /* Treść jest na wierzchu */
+    padding: 0 1rem;
+}

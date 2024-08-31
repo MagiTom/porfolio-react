@@ -1,0 +1,31 @@
+@import './variables.scss';
+
+* {
+    box-sizing: border-box;
+  }
+
+body {
+    font-family: $font-body;
+    background-color: $color-primary;
+    margin: 0;
+    padding: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: $font-heading;
+    color: $color-secondary;
+  }
+  
+  p, i {
+    color: $color-secondary;
+  }
+  
+  a {
+    text-decoration: none;
+    color: $color-secondary;
+  }
+  
+  a:hover {
+    color: $color-accent;
+  }
+  
