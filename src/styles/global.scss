@@ -37,18 +37,9 @@ body {
 
   .swiper {
     width: 100%;
+   height: fit-content;
   }
   
-  .swiper-slide {
-
-  
-    /* Center slide text vertically */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-  }
   
   .swiper-slide img {
     display: block;
@@ -60,19 +51,27 @@ body {
 
 
   .swiper-slide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     .slideItem{
-      height: 200px;
+      margin-top: 2em;
       text-align: center;
-      font-size: 35px;
-      background: #fff;
+      background: rgb(171, 171, 206);
       border-radius: 20px;
+      margin-bottom: 1em;
+      height: 250px;
     }
     .active{
-      transform: scale(1.2);
+      transform: scale(1.1);
     }
   }
  
-
+.swiper-pagination{
+position: static;
+margin: 1em;
+}
   .swiper-pagination-bullet {
     width: 20px;
     height: 20px;

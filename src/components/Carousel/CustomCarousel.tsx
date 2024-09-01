@@ -19,15 +19,13 @@ interface CarouselProps {
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
   const navPrevButton = React.useRef<HTMLButtonElement>(null);
   const navNextButton = React.useRef<HTMLButtonElement>(null);
-  const paginationLabel = React.useRef<HTMLHeadingElement>(null);
 
   const onBeforeInit = (Swiper: SwiperCore): void => {
     if (typeof Swiper.params.navigation !== "boolean") {
       const navigation = Swiper.params.navigation;
-      if(navigation){
+      if (navigation) {
         navigation.prevEl = navPrevButton.current;
         navigation.nextEl = navNextButton.current;
-
       }
     }
   };
@@ -40,6 +38,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
 
   return (
     <div className={styles.carousel}>
+      {/* <div className={styles.carousel_overlay}></div> */}
       <Swiper
         onBeforeInit={onBeforeInit}
         grabCursor={true}
@@ -68,7 +67,28 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
           <SwiperSlide key={slide}>
             {({ isActive }) => (
               <div className={isActive ? "slideItem active" : "slideItem"}>
-                Current slide is {isActive ? "active" : "not active"}
+                <div className={styles.carousel_content}>
+              
+                 
+                    <p>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      Aliquam dictum mattis velit, sit amet faucibus felis
+                      iaculis nec. Nulla
+                    </p>
+                    <div className={styles.carousel_buttons}>
+                    <Button theme="light" onClick={() => alert("Clicked!")}>
+                      <span>Projects</span>
+                    </Button>
+                    <ButtonCircle
+                      theme="light"
+                      onClick={() => alert("Clicked!")}
+                    >
+                      <EastIcon style={{ color: "var(--theme-medium)" }} />
+                    </ButtonCircle>
+                  </div>
+                  </div>
+          
+  
               </div>
             )}
           </SwiperSlide>
@@ -76,12 +96,11 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
       </Swiper>
 
       <div className={styles.carousel_nav}>
-
         <ButtonCircle ref={navPrevButton} theme="dark">
-        <WestIcon style={{ color:  'var(--theme-accent)'  }} />
+          <WestIcon style={{ color: "var(--theme-accent)", margin: "10px" }} />
         </ButtonCircle>
         <ButtonCircle theme="dark" ref={navNextButton}>
-        <EastIcon style={{ color: 'var(--theme-accent)' }} />
+          <EastIcon style={{ color: "var(--theme-accent)", margin: "10px" }} />
         </ButtonCircle>
       </div>
     </div>

@@ -1,7 +1,7 @@
 import React, { forwardRef } from 'react';
 import { ButtonProps } from '../../types/ButtonProps.model';
 
-const Button = forwardRef<HTMLButtonElement, ButtonProps>(({ children, onClick, theme}) => {
+const Button: React.FC<ButtonProps> =(({ children, onClick, theme}) => {
   const backgroundColor = theme === 'light' ? 'var(--theme-light)' : 'var(--theme-dark)';
   const textColor = theme === 'light' ? 'var(--theme-dark)' : 'var(--theme-accent)';
   const borderColor = theme === 'light' ? 'var(--theme-light)' : 'var(--theme-medium)';

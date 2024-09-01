@@ -5,7 +5,7 @@ import { ButtonProps } from '../../types/ButtonProps.model';
 // Komponent Button z obsługą ref
 const ButtonCircle = forwardRef<HTMLButtonElement, ButtonProps>(({ children, onClick, theme }, ref) => {
 
-  const backgroundColor = theme === 'light' ? 'var(--theme-light)' : 'var(--theme-dark)';
+  const backgroundColor = theme === 'light' ? 'var(--theme-light)' : 'transparent';
 
 
   const buttonStyle: React.CSSProperties = {
