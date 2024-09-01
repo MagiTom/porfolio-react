@@ -1,7 +1,14 @@
-$color-primary: #121212;
-$color-secondary: #F5F5F5;
-$color-accent: #A6A6A6;
-$color-tertiary: #3D3D3D;
+$color-primary: var(--theme-dark);
+$color-secondary: var(--theme-light);
+$color-accent: var(--theme-accent);
+$color-tertiary:  var(--theme-medium);
 
 $font-heading: 'Fira Code', sans-serif;
 $font-body: 'Open Sans', sans-serif;
+
+:root {
+    --theme-light: #F5F5F5;
+    --theme-dark: #121212;
+    --theme-accent: #A6A6A6;
+    --theme-medium: #3D3D3D;
+  }

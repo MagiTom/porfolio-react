@@ -5,7 +5,10 @@ import reportWebVitals from './reportWebVitals';
 import './styles/global.scss'; // Importujemy globalne style
 import { faB, faCheckSquare, faCoffee, faDatabase, faHouseLaptop, faS, faWindowMaximize } from '@fortawesome/free-solid-svg-icons';
 import { library } from '@fortawesome/fontawesome-svg-core';
-library.add(faB, faS, faHouseLaptop, faCheckSquare, faCoffee, faDatabase, faWindowMaximize)
+import { register } from 'swiper/element/bundle';
+library.add(faB, faS, faHouseLaptop, faCheckSquare, faCoffee, faDatabase, faWindowMaximize);
+// register Swiper custom elements
+register();
 
 
 const root = ReactDOM.createRoot(

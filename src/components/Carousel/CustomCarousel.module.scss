@@ -1,0 +1,12 @@
+.carousel{
+  position: relative;
+  &_nav{
+    position: absolute;
+    z-index: 10000;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}
+

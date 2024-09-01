@@ -1,10 +1,12 @@
 import React from 'react';
 import BackgroundWithCircle from '../components/BackgroundWithCircle/BackgroundWithCircle';
+import Hero from '../components/Hero/Hero';
 // import './About.css';
 
 const About: React.FC = () => {
     return (
         <div className="about-page">
+                    <Hero></Hero>
                <BackgroundWithCircle topPosition="30%" size="150px">
                 <h1>O mnie</h1>
                 <p>Jestem front-end developerem z pasją do tworzenia nowoczesnych aplikacji.</p>

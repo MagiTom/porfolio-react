@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import styles from "./Navbar.module.scss";
 import classNames from 'classnames';
+import BackgroundWithCircle from "../BackgroundWithCircle/BackgroundWithCircle";
 
 
 export const Navbar: React.FC = () => {
@@ -10,6 +11,7 @@ export const Navbar: React.FC = () => {
       setIsOpen(!isOpen);
     };
   return (
+    <BackgroundWithCircle topPosition="30%" size="300px">
          <nav className={styles.navbar}>
       <div className={styles.navbar_container}>
         <div className={styles.navbar_logo}><p>
@@ -33,6 +35,7 @@ export const Navbar: React.FC = () => {
         </ul>
       </div>
     </nav>
+    </BackgroundWithCircle>
   );
 };
 

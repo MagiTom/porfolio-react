@@ -5,7 +5,21 @@
         margin: 0;
     }
  
+i{
+    color: black;
+}
 
+&_buttons{
+    display: flex;
+    align-items: center;
+    gap: 0.4em;
+}
+&_media{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+}
 }
 
 @include md {
@@ -25,7 +39,7 @@
         h1:first-child{
             grid-area: front;
         }
-        button{
+        &_buttons{
             grid-area: btn;
         }
         p{

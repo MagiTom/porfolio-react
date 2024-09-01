@@ -4,13 +4,13 @@ import Footer from "./components/Footer/Footer";
 import About from "./pages/About";
 import Projects from "./pages/Projects";
 import Contact from "./pages/Contact";
-import Hero from "./components/Hero/Hero";
+import Navbar from "./components/Navbar/Navbar";
 
 const App: React.FC = () => {
   return (
     <Router>
       <div className="App">
-        <Hero></Hero>
+      <Navbar />
         <Routes>
           <Route path="/" element={<About />} />
           <Route path="/projects" element={<Projects />} />
