@@ -66,29 +66,27 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
         {items.map((slide) => (
           <SwiperSlide key={slide}>
             {({ isActive }) => (
-              <div className={isActive ? "slideItem active" : "slideItem"}>
-                <div className={styles.carousel_content}>
+              <div style={{backgroundImage: `url(https://fastly.picsum.photos/id/409/200/200.jpg?hmac=AY8BYOBixnRqVEMdEhYmw49e-6qu3M3zf_xXjkAuHHc)`}} className={isActive ? "slideItem active" : "slideItem"}>
               
-                 
+                  <div className={styles.carousel_content}>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aliquam dictum mattis velit, sit amet faucibus felis
                       iaculis nec. Nulla
                     </p>
                     <div className={styles.carousel_buttons}>
-                    <Button theme="light" onClick={() => alert("Clicked!")}>
-                      <span>Projects</span>
-                    </Button>
-                    <ButtonCircle
-                      theme="light"
-                      onClick={() => alert("Clicked!")}
-                    >
-                      <EastIcon style={{ color: "var(--theme-medium)" }} />
-                    </ButtonCircle>
-                  </div>
-                  </div>
-          
-  
+                      <Button theme="light" onClick={() => alert("Clicked!")}>
+                        <span>Projects</span>
+                      </Button>
+                      <ButtonCircle
+                        theme="light"
+                        onClick={() => alert("Clicked!")}
+                      >
+                        <EastIcon style={{ color: "var(--theme-medium)" }} />
+                      </ButtonCircle>
+                    </div>
+             
+                </div>
               </div>
             )}
           </SwiperSlide>

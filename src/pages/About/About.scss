@@ -1,0 +1,48 @@
+@import "../../styles/variables.scss";
+@import "../../styles/mixins.scss";
+.about {
+  &_img {
+    margin: 0 auto;
+    height: 250px;
+    width: 200px;
+    background: url("https://fastly.picsum.photos/id/5/200/300.jpg?hmac=1TWjKFT7_MRP0ApEyDUA3eCP0HXaKTWJfHgVjwGNoZU");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: $borderRadius;
+    margin-bottom: 1em;
+  }
+
+  &_item {
+    @include card();
+    margin: 1em;
+  }
+  &_item--accent {
+    @include card(light);
+    margin: 1em;
+    width: 60%;
+  }
+  &_buttons {
+    position: relative;
+    display: flex;
+
+    .button {
+      position: absolute;
+    }
+    .button:nth-child(1) {
+      top: 0;
+      left: 0;
+    }
+    .button:nth-child(2) {
+      left: 25px;
+    }
+  }
+
+  h4 {
+    margin: 0;
+  }
+  &_wrapper{
+    display: flex;
+    align-items: center;
+  }
+}

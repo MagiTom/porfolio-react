@@ -1,3 +1,5 @@
+@import './variables.scss';
+
 $breakpoints: (
   "xs": 0,
   "sm": 576px,
@@ -41,5 +43,21 @@ $breakpoints: (
 @mixin breakpoint($bp: 0) {
   @media (max-width: $bp) {
     @content;
+  }
+}
+
+@mixin card($color: dark) {
+  $bg-color: if($color == light, $color-secondary, $color-primary);
+  $text-color: if($color == light, $color-primary, $color-secondary);
+
+  border: 1px solid $color-tertiary;
+  border-radius: $borderRadius;
+  padding: 1em;
+  background-color: $bg-color;
+
+  h4, p {
+    font-family: $font-body !important;
+    font-weight: lighter;
+    color: $text-color;
   }
 }
