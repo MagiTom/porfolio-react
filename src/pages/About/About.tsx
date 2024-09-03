@@ -6,6 +6,7 @@ import Button from "../../components/Button/Button";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import ButtonCircle from "../../components/ButtonCircle/ButtonCircle";
+import EmploymentTable from "../../components/EmploymentTable/EmploymentTable";
 
 const About: React.FC = () => {
   return (
@@ -60,6 +61,8 @@ const About: React.FC = () => {
           
           </div>
         </div>
+        <h1>Work</h1>
+        <EmploymentTable></EmploymentTable>
       </BackgroundWithCircle>
     </div>
   );
