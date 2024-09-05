@@ -1,5 +1,8 @@
-export type ButtonProps = {
-    children: React.ReactNode;
-    onClick?: () => void;
-    theme: 'light' | 'dark'; 
-  };
+export interface ButtonPropsPair {
+  onClick?: () => void;
+}
+
+export interface ButtonProps extends ButtonPropsPair {
+  children: React.ReactNode;
+  theme: "light" | "dark";
+}

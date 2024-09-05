@@ -22,21 +22,6 @@
     margin: 1em;
     width: 60%;
   }
-  &_buttons {
-    position: relative;
-    display: flex;
-
-    .button {
-      position: absolute;
-    }
-    .button:nth-child(1) {
-      top: 0;
-      left: 0;
-    }
-    .button:nth-child(2) {
-      left: 25px;
-    }
-  }
 
   h4 {
     margin: 0;

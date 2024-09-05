@@ -7,6 +7,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import NorthEastIcon from "@mui/icons-material/NorthEast";
 import ButtonCircle from "../../components/ButtonCircle/ButtonCircle";
 import EmploymentTable from "../../components/EmploymentTable/EmploymentTable";
+import ButtonsPair from "../../components/ButtonsPair/ButtonsPair";
 
 const About: React.FC = () => {
   return (
@@ -30,14 +31,7 @@ const About: React.FC = () => {
                 fuga possimus dolorum ipsum pariatur, enim accusamus
               </p>
             </div>
-            <div className="about_buttons">
-              <ButtonCircle theme="dark" onClick={() => alert("Clicked!")}>
-                <GitHubIcon style={{ color: "var(--theme-light)" }} />
-              </ButtonCircle>
-              <ButtonCircle theme="light" onClick={() => alert("Clicked!")}>
-                <NorthEastIcon style={{ color: "var(--theme-dark)" }} />
-              </ButtonCircle>
-            </div>
+            <ButtonsPair></ButtonsPair>
           </div>
 
           <div className="about_item">
