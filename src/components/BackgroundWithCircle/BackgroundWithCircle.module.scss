@@ -12,9 +12,9 @@
     border-radius: 50%;
     right: -50px; /* Przesunięcie okręgu poza ekran z prawej strony */
     transform: translateY(-50%); /* Środek okręgu jest na pozycji top */
+    z-index: -1;
 }
 
 .content {
     position: relative;
-    // z-index: 1; /* Treść jest na wierzchu */
 }

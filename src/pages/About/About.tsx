@@ -2,10 +2,6 @@ import React from "react";
 import BackgroundWithCircle from "../../components/BackgroundWithCircle/BackgroundWithCircle";
 import Hero from "../../components/Hero/Hero";
 import "./About.scss";
-import Button from "../../components/Button/Button";
-import GitHubIcon from "@mui/icons-material/GitHub";
-import NorthEastIcon from "@mui/icons-material/NorthEast";
-import ButtonCircle from "../../components/ButtonCircle/ButtonCircle";
 import EmploymentTable from "../../components/EmploymentTable/EmploymentTable";
 import ButtonsPair from "../../components/ButtonsPair/ButtonsPair";
 
@@ -17,7 +13,7 @@ const About: React.FC = () => {
         <div className="about_info">
           <h4>.../O mnie ...</h4>
           <p>
-            Hello I'm Magda, I'm front-end developer. More than 3 years
+            Hello I'm Magda, <em>I'm front-end developer</em>. More than 3 years
             experience
           </p>
         </div>
@@ -55,7 +51,7 @@ const About: React.FC = () => {
           
           </div>
         </div>
-        <h1>Work</h1>
+        <h1 className="about_work">Work</h1>
         <EmploymentTable></EmploymentTable>
       </BackgroundWithCircle>
     </div>

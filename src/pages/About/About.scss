@@ -1,6 +1,7 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 .about {
+
   &_img {
     margin: 0 auto;
     height: 250px;
@@ -15,19 +16,36 @@
 
   &_item {
     @include card();
-    margin: 1em;
+    &--accent{
+      @include card(light);
+      width: 60%;
+    }
   }
-  &_item--accent {
-    @include card(light);
-    margin: 1em;
-    width: 60%;
+  &_additional{
+   p{
+    font-size: 0.8rem; 
+    color: $color-accent;
+   }
   }
 
   h4 {
     margin: 0;
+    font-size: 0.9rem;
   }
+
+  &_work{
+    text-align: right;
+  }
+  
   &_wrapper{
     display: flex;
     align-items: center;
+  }
+  &_info{
+    margin: 2em 0;
+    p{
+      font-weight: lighter;
+      color: $color-accent;
+    }
   }
 }

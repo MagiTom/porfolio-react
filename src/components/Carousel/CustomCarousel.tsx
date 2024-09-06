@@ -3,9 +3,8 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/navigation";
-import styles from "./CustomCarousel.module.scss";
+import "./CustomCarousel.scss";
 import { Navigation, Pagination } from "swiper/modules";
-import { Swiper as SwiperType } from "swiper";
 import Button from "../Button/Button";
 import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
@@ -37,7 +36,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
   };
 
   return (
-    <div className={styles.carousel}>
+    <div className="carousel">
       {/* <div className={styles.carousel_overlay}></div> */}
       <Swiper
         onBeforeInit={onBeforeInit}
@@ -68,15 +67,16 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
             {({ isActive }) => (
               <div style={{backgroundImage: `url(https://fastly.picsum.photos/id/409/200/200.jpg?hmac=AY8BYOBixnRqVEMdEhYmw49e-6qu3M3zf_xXjkAuHHc)`}} className={isActive ? "slideItem active" : "slideItem"}>
               
-                  <div className={styles.carousel_content}>
+                  <div className="carousel_content">
+                    <h5>Receip App</h5>
                     <p>
                       Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                       Aliquam dictum mattis velit, sit amet faucibus felis
                       iaculis nec. Nulla
                     </p>
-                    <div className={styles.carousel_buttons}>
+                    <div className="carousel_buttons">
                       <Button theme="light" onClick={() => alert("Clicked!")}>
-                        <span>Projects</span>
+                        <span>Read more</span>
                       </Button>
                       <ButtonCircle
                         theme="light"
@@ -93,7 +93,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
         ))}
       </Swiper>
 
-      <div className={styles.carousel_nav}>
+      <div className="carousel_nav">
         <ButtonCircle ref={navPrevButton} theme="dark">
           <WestIcon style={{ color: "var(--theme-accent)", margin: "10px" }} />
         </ButtonCircle>

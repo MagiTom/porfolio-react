@@ -54,6 +54,9 @@ $breakpoints: (
   border-radius: $borderRadius;
   padding: 1em;
   background-color: $bg-color;
+  font-size: 0.8rem;
+  margin: 1em;
+  font-weight: bolder;
 
   h4, p {
     font-family: $font-body !important;

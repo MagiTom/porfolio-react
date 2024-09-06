@@ -23,7 +23,7 @@ const ComponentName: React.FC<Props> = (props) => {
           <h1>Front-end</h1>
           <h1>Developer</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero, culpa
+            Lorem ipsum <em>dolor sit amet </em>consectetur adipisicing elit. Vero, culpa
             laudantium tempora corrupti dolorem illo necessitatibus repellat
             iure facilis nemo
           </p>
