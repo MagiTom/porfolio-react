@@ -12,25 +12,18 @@ interface EmploymentData {
 const EmploymentTable: React.FC = () => {
   const data: EmploymentData[] = [
     {
-      date: "2015 - 2020",
-      years: 5,
-      company: "Company A",
-      position: "Developer",
+      date: "2021-obecnie",
+      years: 3.5,
+      company: "Devqube sp. z o.o.",
+      position: "Front-End Developer",
       stack: "Angular",
     },
     {
-      date: "2015 - 2020",
-      years: 10,
-      company: "Company B",
-      position: "Manager",
-      stack: "Angular",
-    },
-    {
-      date: "2015 - 2020",
-      years: 3,
-      company: "Company C",
-      position: "Designer",
-      stack: "Angular",
+      date: "2020 - 2021",
+      years: 1,
+      company: "NordDigital, Brenna",
+      position: "PRODUCT MANAGER",
+      stack: "HTML, CSS",
     },
   ];
 

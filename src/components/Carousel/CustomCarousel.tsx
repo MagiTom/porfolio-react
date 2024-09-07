@@ -10,9 +10,20 @@ import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
 import SwiperCore from "swiper";
 import ButtonCircle from "../ButtonCircle/ButtonCircle";
+import Projects from "../../constans/projects";
+import { Project } from "../../constans/projects";
+
+const importImage = (path: string) => {
+  try {
+    return require(`../../assets/${path}`);
+  } catch (e) {
+    console.error(`Image not found: ${path}`);
+    return '';
+  }
+};
 
 interface CarouselProps {
-  items: string[];
+  items: Project[];
 }
 
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
@@ -37,7 +48,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
 
   return (
     <div className="carousel">
-      {/* <div className={styles.carousel_overlay}></div> */}
+      <div className="carousel_overlay"></div>
       <Swiper
         onBeforeInit={onBeforeInit}
         grabCursor={true}
@@ -62,25 +73,25 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
         }}
         className="mySwiper"
       >
-        {items.map((slide) => (
-          <SwiperSlide key={slide}>
+        {items.map((slide, index) => (
+          <SwiperSlide key={index}>
             {({ isActive }) => (
-              <div style={{backgroundImage: `url(https://fastly.picsum.photos/id/409/200/200.jpg?hmac=AY8BYOBixnRqVEMdEhYmw49e-6qu3M3zf_xXjkAuHHc)`}} className={isActive ? "slideItem active" : "slideItem"}>
+              <div      style={{
+                backgroundImage: `url(${importImage(slide.src)})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+              }} className={isActive ? "slideItem active" : "slideItem"}>
               
                   <div className="carousel_content">
-                    <h5>Receip App</h5>
-                    <p>
-                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      Aliquam dictum mattis velit, sit amet faucibus felis
-                      iaculis nec. Nulla
-                    </p>
+                    <h5>{slide.title}</h5>
+                    <p dangerouslySetInnerHTML={{ __html: slide.description }} />
                     <div className="carousel_buttons">
-                      <Button theme="light" onClick={() => alert("Clicked!")}>
+                      <Button theme="light" onClick={() => window.open(slide.github, "_blank")}>
                         <span>Read more</span>
                       </Button>
                       <ButtonCircle
                         theme="light"
-                        onClick={() => alert("Clicked!")}
+                        onClick={() => window.open(slide.src, "_blank")}
                       >
                         <EastIcon style={{ color: "var(--theme-medium)" }} />
                       </ButtonCircle>

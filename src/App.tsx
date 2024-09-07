@@ -5,10 +5,13 @@ import About from "./pages/About/About";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact";
 import Navbar from "./components/Navbar/Navbar";
+import './App.scss'
+import BackgroundWithCircle from "./components/BackgroundWithCircle/BackgroundWithCircle";
 
 const App: React.FC = () => {
   return (
     <Router>
+      <BackgroundWithCircle topPosition="0" size="750px">
       <div className="App">
       <Navbar />
         <Routes>
@@ -18,6 +21,7 @@ const App: React.FC = () => {
         </Routes>
         <Footer />
       </div>
+      </BackgroundWithCircle>
     </Router>
   );
 };

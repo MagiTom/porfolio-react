@@ -40,13 +40,11 @@ export const Navbar: React.FC = () => {
             <li>
               <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
             </li>
-            <li>
-              <div className={styles.navbar_lang}>
+          </ul>
+          <div className={styles.navbar_lang}>
                 <p>Pl</p>
                 <p>En</p>
               </div>
-            </li>
-          </ul>
         </div>
       </nav>
     </BackgroundWithCircle>

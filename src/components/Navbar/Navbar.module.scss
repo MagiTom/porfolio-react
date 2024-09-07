@@ -2,10 +2,22 @@
 @import "../../styles/mixins.scss";
 
 .navbar {
+  @include md {
+    margin-bottom: 4em;
+  }
   &_logo {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: $color-accent;
+    font-family: $font-heading;
+  }
+
+  i{
+    font-size: 1.5rem;
+    @include md {
+      display: none;
+    }
   }
 
   &_menu {
@@ -25,8 +37,20 @@
       rgba(61, 61, 61, 0.9304971988795518) 78%
     );
     z-index: 100;
+    @include md {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 2.5em;
+      margin-top: 1em;
+      background: none;
+    }
     li {
       margin-bottom: 2em;
+      @include md {
+       margin: 0;
+      }
     }
   }
 
@@ -39,7 +63,23 @@
     p:first-child {
       border-right: 1px solid $color-secondary;
       padding-right: 1em;
+      @include md {
+        border-right: none;
+        border-bottom: 1px solid $color-accent;
+        margin-bottom: 0.5em;
+       }
     }
+    @include md {
+      flex-direction: column;
+      gap: 0;
+      p{
+        margin: 0;
+        padding: 0 !important;
+        text-align: center;
+        color: $color-accent;
+      }
+     }
+
   }
 
   &_container {
@@ -52,3 +92,4 @@
 .active {
     display: block;
   }
+

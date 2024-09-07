@@ -50,6 +50,9 @@ i{
         //                               "text text"
         //                               "btn btn";                        
         // }
+        h1{
+            font-size: 4.5rem;
+        }
         h1:first-child{
             grid-area: front;
         }

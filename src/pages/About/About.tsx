@@ -13,8 +13,10 @@ const About: React.FC = () => {
         <div className="about_info">
           <h4>.../O mnie ...</h4>
           <p>
-            Hello I'm Magda, <em>I'm front-end developer</em>. More than 3 years
-            experience
+          Cześć, jestem Magda, 
+          Pasjonuję się światem <em>front-endu</em> i każdego dnia odkrywam w nim coś nowego. Praca w tej branży stawia przede mną <em>ekscytujące wyzwania</em>, 
+          które pozwalają mi łączyć <em>kreatywność z funkcjonalnością</em>. Uwielbiam tworzyć projekty, które nie tylko wyglądają świetnie, ale też oferują <em>intuicyjne i przemyślane rozwiązania</em>. Wymaga to zarówno analitycznego myślenia, jak i artystycznego podejścia. Na co dzień pracuję z <em>Angularem</em>, a po godzinach rozwijam się, korzystając z <em>Reacta</em>,
+          dzięki czemu poszerzam swoje horyzonty i pozostaję na bieżąco z najnowszymi trendami w świecie front-endu.
           </p>
         </div>
         <div className="about_stack">
@@ -23,29 +25,26 @@ const About: React.FC = () => {
             <div className="about_item--accent">
               <h4>Front-end</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                fuga possimus dolorum ipsum pariatur, enim accusamus
+                Javascript / Typesript / Angular / Ionic / Capacitor / Rxjs / Ngrx / React / Redux / React Native / Git / Firebase / Sqlite
               </p>
             </div>
             <ButtonsPair></ButtonsPair>
           </div>
 
           <div className="about_item">
-            <h4>Front-end</h4>
+            <h4>Style</h4>
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-              fuga possimus dolorum ipsum pariatur, enim accusamus
+              Sass / Angular Material / Bootstrap / MUI / PrimeNg / Gsap / Chart.js
             </p>
           </div>
           <div className="about_wrapper">
           <div className="about_additional">
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit.</p>
+                <p>Technologie, których dopiero się uczę</p>
             </div>
             <div className="about_item">
-              <h4>Front-end</h4>
+              <h4>W trakcie nauki</h4>
               <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit,
-                fuga possimus dolorum ipsum pariatur, enim accusamus
+                Vue / Node.js / Express 
               </p>
             </div>
           
