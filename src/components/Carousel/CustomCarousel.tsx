@@ -29,6 +29,7 @@ interface CarouselProps {
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
   const navPrevButton = React.useRef<HTMLButtonElement>(null);
   const navNextButton = React.useRef<HTMLButtonElement>(null);
+  const maxLength = 150;
 
   const onBeforeInit = (Swiper: SwiperCore): void => {
     if (typeof Swiper.params.navigation !== "boolean") {
@@ -63,11 +64,11 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
             spaceBetween: 20,
           },
           768: {
-            slidesPerView: 3,
+            slidesPerView: 2,
             spaceBetween: 40,
           },
           1024: {
-            slidesPerView: 4,
+            slidesPerView: 3,
             spaceBetween: 50,
           },
         }}
@@ -84,7 +85,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
               
                   <div className="carousel_content">
                     <h5>{slide.title}</h5>
-                    <p dangerouslySetInnerHTML={{ __html: slide.description }} />
+                    <p dangerouslySetInnerHTML={{ __html: slide.description.length > maxLength ? `${slide.description.substring(0, maxLength)}...` : slide.description }} />
                     <div className="carousel_buttons">
                       <Button theme="light" onClick={() => window.open(slide.github, "_blank")}>
                         <span>Read more</span>

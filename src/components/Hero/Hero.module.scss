@@ -28,33 +28,40 @@ i{
     align-items: center;
     gap: 0.4em;
 }
-&_media{
-    margin-top: 1em;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0.5em;
-}
+
 }
 
-@include md {
+@include lg{
+    .hero{
+        h1{
+            font-size: 3.5rem;
+            margin-right: 0.5em;
+        }
+        &_media{
+            justify-content: center;
+        }
+    }
+}
+
+@include xl {
     .hero {
         &_header{
+            margin: 0 auto;
             display: grid;
+            grid-template-columns: auto auto; 
             grid-template-areas: "front btn"
                                       "text dev";
         }
-        // &_header{
-        //     display: grid;
-        //     grid-template-areas: "front front"
-        //                               "dev dev"
-        //                               "text text"
-        //                               "btn btn";                        
-        // }
+        h1:last-of-type{
+            margin-left: 0.5em;
+        }
         h1{
             font-size: 4.5rem;
         }
         h1:first-child{
             grid-area: front;
+            margin-right: 0.5em;
+            white-space: nowrap;
         }
         &_buttons{
             grid-area: btn;
@@ -67,4 +74,12 @@ i{
         }
     }
 
+  }
+
+  @include xxl {
+    .hero {
+        &_header{
+            width: 70%;
+        }
+    }
   }

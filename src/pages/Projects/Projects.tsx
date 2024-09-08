@@ -60,7 +60,7 @@ const Projects: React.FC = () => {
         </BackgroundWithCircle>
 
         <BackgroundWithCircle topPosition="30%" size="250px">
-          <div className="project-item">
+          <div className="project-item reverse">
             <div className="project-description">
               <h3>{songBook.title}</h3>
               <div className="project-stack">
@@ -134,7 +134,7 @@ const Projects: React.FC = () => {
           </div>
         </BackgroundWithCircle>
         <BackgroundWithCircle topPosition="30%" size="250px">
-          <div className="project-item">
+          <div className="project-item reverse">
             <div className="project-description">
               <h3>{oldPortfolioProject.title}</h3>
               <div className="project-stack">

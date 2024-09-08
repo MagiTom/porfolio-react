@@ -19,8 +19,9 @@ const About: React.FC = () => {
           dzięki czemu poszerzam swoje horyzonty i pozostaję na bieżąco z najnowszymi trendami w świecie front-endu.
           </p>
         </div>
-        <div className="about_stack">
+        <div className="about_section">
           <div className="about_img"></div>
+        <div className="about_stack">
           <div className="about_wrapper">
             <div className="about_item--accent">
               <h4>Front-end</h4>
@@ -50,8 +51,11 @@ const About: React.FC = () => {
           
           </div>
         </div>
-        <h1 className="about_work">Work</h1>
+        </div>
+        <div className="about_work">
+        <h1>Work</h1>
         <EmploymentTable></EmploymentTable>
+        </div>
       </BackgroundWithCircle>
     </div>
   );

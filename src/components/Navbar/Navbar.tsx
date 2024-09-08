@@ -32,19 +32,31 @@ export const Navbar: React.FC = () => {
             })}
           >
             <li>
-              <Link to="/" onClick={toggleNavbar}>About</Link>
+              <Link to="/" onClick={toggleNavbar}>
+                About
+              </Link>
             </li>
             <li>
-              <Link to="/projects" onClick={toggleNavbar}>Projects</Link>
+              <Link to="/projects" onClick={toggleNavbar}>
+                Projects
+              </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={toggleNavbar}>Contact</Link>
+              <Link to="/contact" onClick={toggleNavbar}>
+                Contact
+              </Link>
+            </li>
+            <li>
+            <div className={styles.navbar_lang_mobile}>
+            <p>Pl</p>
+            <p>En</p>
+          </div>
             </li>
           </ul>
-          <div className={styles.navbar_lang}>
-                <p>Pl</p>
-                <p>En</p>
-              </div>
+            <div className={styles.navbar_lang_web}>
+            <p>Pl</p>
+            <p>En</p>
+          </div>
         </div>
       </nav>
     </BackgroundWithCircle>

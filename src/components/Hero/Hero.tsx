@@ -12,6 +12,7 @@ import ButtonCircle from "../ButtonCircle/ButtonCircle";
 import media from "../../constans/links";
 import { useNavigate } from "react-router-dom";
 import Projects from "../../constans/projects";
+import SocialMedia from "../SocialMedia/SocialMedia";
 
 interface Props {
   // Typowanie propsów
@@ -38,43 +39,7 @@ const ComponentName: React.FC<Props> = (props) => {
           </ButtonCircle>
         </div>
       </div>
-      <div className={styles.hero_media}>
-        <Button
-          theme="dark"
-          onClick={() => window.open(media.github, "_blank")}
-        >
-          <GitHubIcon style={{ color: "var(--theme-light)" }} />{" "}
-          <span>Github</span>
-        </Button>
-        <Button
-          theme="dark"
-          onClick={() => window.open(media.linkedin, "_blank")}
-        >
-          <LinkedInIcon style={{ color: "var(--theme-light)" }} />{" "}
-          <span>Linkedin </span>
-        </Button>
-        <Button
-          theme="dark"
-          onClick={() => window.open(media.facebook, "_blank")}
-        >
-          <FacebookIcon style={{ color: "var(--theme-light)" }} />{" "}
-          <span>Facebook</span>
-        </Button>
-        <Button
-          theme="dark"
-          onClick={() => window.open(media.instagram, "_blank")}
-        >
-          <InstagramIcon style={{ color: "var(--theme-light)" }} />{" "}
-          <span>Instagram</span>
-        </Button>
-        <Button
-          theme="dark"
-          onClick={() => window.open(media.codePen, "_blank")}
-        >
-          <CodeIcon style={{ color: "var(--theme-light)" }} />{" "}
-          <span>CodePen</span>
-        </Button>
-      </div>
+      <SocialMedia></SocialMedia>
       <CustomCarousel items={items} />
     </div>
   );

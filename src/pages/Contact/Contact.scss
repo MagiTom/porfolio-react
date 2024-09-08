@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+@import '../../styles/mixins.scss';
+.contact{
+    &-wrapper{
+  
+        @include lg{
+            display: flex;
+            justify-content: center;
+            gap: 3em;
+        }
+    }
+    &-name{
+        h1{
+            margin: 0;
+            font-size: 3rem;
+        }
+    }
+    &-position{
+        display: flex;
+        align-items: center;
+        gap: 1em;
+        p{
+         color: $color-accent;
+         font-size: 0.8rem;
+        }
+    }
+    &-email{
+        @include card;
+        text-align: center;
+        cursor: pointer;
+        p{
+            color: $color-accent;
+            font-size: 1.1rem;
+        }
+    }
+}

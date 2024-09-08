@@ -55,7 +55,7 @@
   }
 
 
-  &_lang {
+  &_lang_mobile, &_lang_web {
     display: flex;
     justify-content: center;
     gap: 1.5em;
@@ -80,6 +80,17 @@
       }
      }
 
+  }
+  &_lang_web{
+    display: none;
+    @include md {
+      display: flex;
+    }
+  }
+  &_lang_mobile{
+    @include md {
+      display: none;
+    }
   }
 
   &_container {

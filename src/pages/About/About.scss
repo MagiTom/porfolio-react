@@ -1,7 +1,6 @@
 @import "../../styles/variables.scss";
 @import "../../styles/mixins.scss";
 .about {
-
   &_img {
     margin: 0 auto;
     height: 250px;
@@ -16,16 +15,16 @@
 
   &_item {
     @include card();
-    &--accent{
+    &--accent {
       @include card(light);
       width: 60%;
     }
   }
-  &_additional{
-   p{
-    font-size: 0.8rem; 
-    color: $color-accent;
-   }
+  &_additional {
+    p {
+      font-size: 0.8rem;
+      color: $color-accent;
+    }
   }
 
   h4 {
@@ -33,19 +32,57 @@
     font-size: 0.9rem;
   }
 
-  &_work{
+  &_work {
     text-align: right;
   }
-  
-  &_wrapper{
+
+  &_wrapper {
     display: flex;
     align-items: center;
   }
-  &_info{
+  &_info {
     margin: 2em 0;
-    p{
+    p {
       font-weight: lighter;
       color: $color-accent;
+    }
+    @include md {
+      display: flex;
+    }
+  }
+}
+
+@include md {
+  .about {
+    &_info {
+      display: flex;
+      gap: 2em;
+
+      h4{
+        width: fit-content;
+        white-space: nowrap;
+      }
+      p{
+        margin: 0 auto;
+        width: 60%;
+      }
+    }
+  }
+}
+
+@include xl {
+  .about {
+    &_section{
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: center;
+      gap: 1em
+    }
+    &_work{
+      @include lg{
+          width: 80%;
+          margin: 0 auto;
+      }
     }
   }
 }

@@ -1,0 +1,12 @@
+@import '../../styles/mixins.scss';
+
+.media{
+    margin-top: 1em;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5em;
+
+    @include lg{
+        justify-content: center;
+    }
+}
