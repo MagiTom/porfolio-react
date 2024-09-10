@@ -11,21 +11,23 @@ import oldPortfolio from "../../assets/old-portfolio.png";
 import oldImage from "../../assets/old-image.png";
 import oldProjects from "../../assets/old-projects.png";
 import projects from "../../constans/projects";
+import { useTranslation } from "react-i18next";
 
 
 const Projects: React.FC = () => {
+  const { t, i18n } = useTranslation();
   const porfolioProject = projects[0];
   const songBook = projects[1];
   const backgroundCatcher = projects[2];
   const oldPortfolioProject = projects[3];
   return (
     <div className="project">
-      <h4>.../Wybrane Projekty...</h4>
+      <h4>.../{t('projects.pageTitle')}...</h4>
       <div className="project-list">
         <BackgroundWithCircle topPosition="30%" size="250px">
           <div className="project-item">
             <div className="project-description">
-              <h3>{porfolioProject.title}</h3>
+              <h3>{t(`${porfolioProject.title}`)}</h3>
               <div className="project-stack">
                 {porfolioProject.stack.map((item, index) => (
                     <Button key={index} theme="dark">
@@ -33,7 +35,7 @@ const Projects: React.FC = () => {
                   </Button>
                 ))}
               </div>
-              <p dangerouslySetInnerHTML={{ __html: porfolioProject.description }} />
+              <p dangerouslySetInnerHTML={{ __html: t(`${porfolioProject.description}`)}} />
               <ButtonsPair onClick={() => window.open(porfolioProject.github, "_blank")}></ButtonsPair>
             </div>
             <div className="project-galery">
@@ -62,7 +64,7 @@ const Projects: React.FC = () => {
         <BackgroundWithCircle topPosition="30%" size="250px">
           <div className="project-item reverse">
             <div className="project-description">
-              <h3>{songBook.title}</h3>
+              <h3>{t(`${songBook.title}`)}</h3>
               <div className="project-stack">
               {songBook.stack.map((item, index) => (
                     <Button key={index} theme="dark">
@@ -70,7 +72,7 @@ const Projects: React.FC = () => {
                   </Button>
                 ))}
               </div>
-              <p dangerouslySetInnerHTML={{ __html: songBook.description }} />
+              <p dangerouslySetInnerHTML={{ __html: t(`${songBook.description}`)}} />
               <ButtonsPair onClick={() => window.open(porfolioProject.github, "_blank")}></ButtonsPair>
             </div>
             <div className="project-galery">
@@ -107,7 +109,7 @@ const Projects: React.FC = () => {
         <BackgroundWithCircle topPosition="30%" size="250px">
           <div className="project-item">
             <div className="project-description">
-              <h3>{backgroundCatcher.title}</h3>
+              <h3>{t(`${backgroundCatcher.title}`)}</h3>
               <div className="project-stack">
               {backgroundCatcher.stack.map((item, index) => (
                     <Button key={index} theme="dark">
@@ -115,7 +117,7 @@ const Projects: React.FC = () => {
                   </Button>
                 ))}
               </div>
-              <p dangerouslySetInnerHTML={{ __html: backgroundCatcher.description }} />
+              <p dangerouslySetInnerHTML={{ __html: t(`${backgroundCatcher.description}`)}} />
               <ButtonsPair onClick={() => window.open(backgroundCatcher.github, "_blank")}></ButtonsPair>
             </div>
             <div className="project-galery">
@@ -136,7 +138,7 @@ const Projects: React.FC = () => {
         <BackgroundWithCircle topPosition="30%" size="250px">
           <div className="project-item reverse">
             <div className="project-description">
-              <h3>{oldPortfolioProject.title}</h3>
+              <h3>{t(`${oldPortfolioProject.title}`)}</h3>
               <div className="project-stack">
               {oldPortfolioProject.stack.map((item, index) => (
                     <Button key={index} theme="dark">
@@ -144,7 +146,7 @@ const Projects: React.FC = () => {
                   </Button>
                 ))}
               </div>
-              <p dangerouslySetInnerHTML={{ __html: oldPortfolioProject.description }} />
+              <p dangerouslySetInnerHTML={{ __html: t(`${oldPortfolioProject.description}`)}} />
               <ButtonsPair onClick={() => window.open(oldPortfolioProject.github, "_blank")}></ButtonsPair>
             </div>
             <div className="project-galery">

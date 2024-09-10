@@ -4,19 +4,17 @@ import Hero from "../../components/Hero/Hero";
 import "./About.scss";
 import EmploymentTable from "../../components/EmploymentTable/EmploymentTable";
 import ButtonsPair from "../../components/ButtonsPair/ButtonsPair";
+import { useTranslation } from "react-i18next";
 
 const About: React.FC = () => {
+  const { t } = useTranslation();
   return (
     <div className="about">
       <Hero></Hero>
       <BackgroundWithCircle topPosition="30%" size="250px">
         <div className="about_info">
-          <h4>.../O mnie ...</h4>
-          <p>
-          Cześć, jestem Magda, 
-          Pasjonuję się światem <em>front-endu</em> i każdego dnia odkrywam w nim coś nowego. Praca w tej branży stawia przede mną <em>ekscytujące wyzwania</em>, 
-          które pozwalają mi łączyć <em>kreatywność z funkcjonalnością</em>. Uwielbiam tworzyć projekty, które nie tylko wyglądają świetnie, ale też oferują <em>intuicyjne i przemyślane rozwiązania</em>. Wymaga to zarówno analitycznego myślenia, jak i artystycznego podejścia. Na co dzień pracuję z <em>Angularem</em>, a po godzinach rozwijam się, korzystając z <em>Reacta</em>,
-          dzięki czemu poszerzam swoje horyzonty i pozostaję na bieżąco z najnowszymi trendami w świecie front-endu.
+          <h4>{t('about.pageTitle')}</h4>
+          <p dangerouslySetInnerHTML={{ __html: t('about.description')}}>
           </p>
         </div>
         <div className="about_section">
@@ -40,10 +38,10 @@ const About: React.FC = () => {
           </div>
           <div className="about_wrapper">
           <div className="about_additional">
-                <p>Technologie, których dopiero się uczę</p>
+                <p>{t('about.technology')}</p>
             </div>
             <div className="about_item">
-              <h4>W trakcie nauki</h4>
+              <h4>{t('about.inProgress')}</h4>
               <p>
                 Vue / Node.js / Express 
               </p>
@@ -53,7 +51,7 @@ const About: React.FC = () => {
         </div>
         </div>
         <div className="about_work">
-        <h1>Work</h1>
+        <h1>{t("about.work")}</h1>
         <EmploymentTable></EmploymentTable>
         </div>
       </BackgroundWithCircle>

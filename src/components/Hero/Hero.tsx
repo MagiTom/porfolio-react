@@ -13,6 +13,7 @@ import media from "../../constans/links";
 import { useNavigate } from "react-router-dom";
 import Projects from "../../constans/projects";
 import SocialMedia from "../SocialMedia/SocialMedia";
+import { useTranslation } from "react-i18next";
 
 interface Props {
   // Typowanie propsów
@@ -21,14 +22,13 @@ const items = Projects;
 
 const ComponentName: React.FC<Props> = (props) => {
    const navigate = useNavigate(); 
+   const { t } = useTranslation();
   return (
     <div className={styles.hero}>
       <div className={styles.hero_header}>
         <h1>Front-end</h1>
         <h1>Developer</h1>
-        <p>
-          Z pasją do tworzenia
-          <em> nowoczesnych, kreatywnych i funkcjonalnych</em> aplikacji.
+        <p dangerouslySetInnerHTML={{ __html: t('hero.description')}}>
         </p>
         <div className={styles.hero_buttons}>
           <Button theme="light" onClick={() => navigate("/projects")}>

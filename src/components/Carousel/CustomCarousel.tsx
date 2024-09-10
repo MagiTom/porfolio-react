@@ -10,8 +10,8 @@ import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
 import SwiperCore from "swiper";
 import ButtonCircle from "../ButtonCircle/ButtonCircle";
-import Projects from "../../constans/projects";
 import { Project } from "../../constans/projects";
+import { useTranslation } from "react-i18next";
 
 const importImage = (path: string) => {
   try {
@@ -27,6 +27,7 @@ interface CarouselProps {
 }
 
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
+  const { t, i18n } = useTranslation();
   const navPrevButton = React.useRef<HTMLButtonElement>(null);
   const navNextButton = React.useRef<HTMLButtonElement>(null);
   const maxLength = 150;
@@ -84,8 +85,8 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
               }} className={isActive ? "slideItem active" : "slideItem"}>
               
                   <div className="carousel_content">
-                    <h5>{slide.title}</h5>
-                    <p dangerouslySetInnerHTML={{ __html: slide.description.length > maxLength ? `${slide.description.substring(0, maxLength)}...` : slide.description }} />
+                    <h5>{t(`${slide.title}`)}</h5>
+                    <p dangerouslySetInnerHTML={{ __html: t(`${slide.description}`).length > maxLength ? `${t(`${slide.description}`).substring(0, maxLength)}...` : t(`${slide.description}`) }} />
                     <div className="carousel_buttons">
                       <Button theme="light" onClick={() => window.open(slide.github, "_blank")}>
                         <span>Read more</span>

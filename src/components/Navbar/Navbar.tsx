@@ -3,9 +3,15 @@ import styles from "./Navbar.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
 import BackgroundWithCircle from "../BackgroundWithCircle/BackgroundWithCircle";
+import { useTranslation } from "react-i18next";
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
+  const { t, i18n } = useTranslation();
+
+  const changeLanguage = (lng: string) => {
+    i18n.changeLanguage(lng);
+  };
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
@@ -33,29 +39,29 @@ export const Navbar: React.FC = () => {
           >
             <li>
               <Link to="/" onClick={toggleNavbar}>
-                About
+                {t('navbar.about')}
               </Link>
             </li>
             <li>
               <Link to="/projects" onClick={toggleNavbar}>
-                Projects
+              {t('navbar.projects')}
               </Link>
             </li>
             <li>
               <Link to="/contact" onClick={toggleNavbar}>
-                Contact
+              {t('navbar.contact')}
               </Link>
             </li>
             <li>
             <div className={styles.navbar_lang_mobile}>
-            <p>Pl</p>
-            <p>En</p>
+            <p onClick={() => changeLanguage('pl')}>Pl</p>
+            <p onClick={() => changeLanguage('en')}>En</p>
           </div>
             </li>
           </ul>
             <div className={styles.navbar_lang_web}>
-            <p>Pl</p>
-            <p>En</p>
+            <p onClick={() => changeLanguage('pl')}>Pl</p>
+            <p onClick={() => changeLanguage('en')}>En</p>
           </div>
         </div>
       </nav>

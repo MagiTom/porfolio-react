@@ -1,0 +1,35 @@
+{    "navbar": {
+  "about": "O mnie",
+  "projects": "Projekty",
+  "contact": "Kontakt"
+},
+"about": {
+  "pageTitle": ".../O mnie ...",
+  "description": "Cześć, jestem Magda, Pasjonuję się światem <em>front-endu</em> i każdego dnia odkrywam w nim coś nowego. Praca w tej branży stawia przede mną <em>ekscytujące wyzwania</em>, które pozwalają mi łączyć <em>kreatywność z funkcjonalnością</em>. Uwielbiam tworzyć projekty, które nie tylko wyglądają świetnie, ale też oferują <em>intuicyjne i przemyślane rozwiązania</em>. Wymaga to zarówno analitycznego myślenia, jak i artystycznego podejścia. Na co dzień pracuję z <em>Angularem</em>, a po godzinach rozwijam się, korzystając z <em>Reacta</em>, dzięki czemu poszerzam swoje horyzonty i pozostaję na bieżąco z najnowszymi trendami w świecie front-endu.",
+  "inProgress": "W trakcie nauki",
+  "technology": "Technologie, których dopiero się uczę",
+  "work": "Praca"
+},
+"hero": {
+  "description": "Z pasją do tworzenia <em>nowoczesnych, kreatywnych i funkcjonalnych</em> aplikacji."
+},
+"projects": {
+  "pageTitle": "Wybrane Projekty",
+  "0": {
+    "title": "Moja strona portfolio",
+    "description": "Strona portfolio napisana w React, inspirowana projektem ze strony <em>https://www.behance.net</em>"
+  },
+  "1": {
+    "title": "Songs Book",
+    "description": "Śpiewnik gitarowy, <em>z opcją administratora</em>, który po zalogowaniu może dodawać, edytować lub usuwać utwory. Posiada panel boczny lewy, z którego można dodawać utwory do panelu prawego, gdzie znajduje się opcja druku do pdf. Utwory mają <em>możliwość transpozycji chwytów</em> oraz wyszukiwarkę."
+  },
+  "2": {
+    "title": "Background Catcher - mobile",
+    "description": "Aplikacja <em>mobilna</em> do pobierania i zapisywania tła na smartfona. Ta aplikacja jest <em>zintegrowana z Unsplash API</em>, dzięki czemu możesz uzyskać swoje ulubione tapety według kategorii, losowo, zapisać je i pobrać. Aplikacja została zbudowana z użyciem <em>Ionic-Angular</em> i wykorzystuje NGRX w celu praktykowania tej biblioteki. Baza danych - Firebase."
+  },
+  "3": {
+    "title": "Starsza stona portfolio",
+    "description": "Moja <em>stara wersja</em> strony portfolio"
+  }
+}
+}

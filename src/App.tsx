@@ -7,6 +7,7 @@ import Contact from "./pages/Contact/Contact";
 import Navbar from "./components/Navbar/Navbar";
 import './App.scss'
 import BackgroundWithCircle from "./components/BackgroundWithCircle/BackgroundWithCircle";
+import './i18n.js'
 
 const App: React.FC = () => {
   return (

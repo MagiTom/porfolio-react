@@ -2,11 +2,13 @@ import React from "react";
 import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import EmailIcon from '@mui/icons-material/Email';
 import "./Contact.scss";
+import { useTranslation } from "react-i18next";
 
 const Contact: React.FC = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="contact">
-      <h4>.../Kontakt...</h4>
+      <h4>.../{t('navbar.contact')}...</h4>
       <div className="contact-wrapper">
         <div className="contact-name">
           <h1>Magdalena</h1>
