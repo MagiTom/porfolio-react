@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import styles from "./Navbar.module.scss";
 import classNames from "classnames";
 import { Link } from "react-router-dom";
@@ -8,6 +8,16 @@ import { useTranslation } from "react-i18next";
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const { t, i18n } = useTranslation();
+  const markerRef = useRef<HTMLDivElement>(null); 
+  const aboutLinkRef = useRef<HTMLAnchorElement>(null); 
+
+  useEffect(() => {
+    if (markerRef.current && aboutLinkRef.current) {
+      const target = aboutLinkRef.current;
+      markerRef.current.style.left = `${target.offsetLeft}px`;
+      markerRef.current.style.width = `${target.offsetWidth}px`;
+    }
+  }, []); 
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -15,6 +25,16 @@ export const Navbar: React.FC = () => {
 
   const toggleNavbar = () => {
     setIsOpen(!isOpen);
+  };
+  
+  const handleChangePage = (event: React.MouseEvent<HTMLAnchorElement>) => {
+    console.log("Page change triggered", event);
+    if (markerRef.current) {
+      const target = event.currentTarget;
+      markerRef.current.style.left = `${target.offsetLeft}px`;
+      markerRef.current.style.width = `${target.offsetWidth}px`;
+    }
+    setIsOpen(false); 
   };
 
   return (
@@ -37,18 +57,19 @@ export const Navbar: React.FC = () => {
               [styles.active]: isOpen,
             })}
           >
+               <div ref={markerRef} className={styles.marker}></div>
             <li>
-              <Link to="/" onClick={toggleNavbar}>
+              <Link ref={aboutLinkRef} to="/" onClick={handleChangePage}>
                 {t('navbar.about')}
               </Link>
             </li>
             <li>
-              <Link to="/projects" onClick={toggleNavbar}>
+              <Link to="/projects" onClick={handleChangePage}>
               {t('navbar.projects')}
               </Link>
             </li>
             <li>
-              <Link to="/contact" onClick={toggleNavbar}>
+              <Link to="/contact" onClick={handleChangePage}>
               {t('navbar.contact')}
               </Link>
             </li>

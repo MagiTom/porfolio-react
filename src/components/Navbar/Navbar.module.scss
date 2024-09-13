@@ -83,6 +83,7 @@
   }
   &_lang_web{
     display: none;
+    cursor: pointer;
     @include md {
       display: flex;
     }
@@ -90,6 +91,7 @@
   &_lang_mobile{
     @include md {
       display: none;
+      cursor: pointer;
     }
   }
 
@@ -104,3 +106,12 @@
     display: block;
   }
 
+  .marker{
+    position: absolute;
+    left: 0;
+    height: 4px;
+    background: white;
+    bottom: -2px;
+    transition: 0.5s;
+    border-radius: 4px;
+}
