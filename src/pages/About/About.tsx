@@ -11,7 +11,7 @@ const About: React.FC = () => {
   return (
     <div className="about">
       <Hero></Hero>
-      <BackgroundWithCircle topPosition="30%" size="250px">
+      <BackgroundWithCircle topPosition="30%" size="600px">
         <div className="about_info">
           <h4>{t('about.pageTitle')}</h4>
           <p dangerouslySetInnerHTML={{ __html: t('about.description')}}>

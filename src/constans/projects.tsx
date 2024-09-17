@@ -11,7 +11,7 @@ const Projects: Project[] = [
   {
     title: "projects.0.title",
     description: "projects.0.description",
-    src: "songbook-image.png",
+    src: "portfolio-image.png",
     github: "https://github.com/MagiTom/portfolio-react",
     url: "",
     stack: ["React", "Typescript", "Swipper", "GSAP", "SASS"],

@@ -1,0 +1,37 @@
+{
+    "navbar": {
+      "about": "About Me",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "about": {
+      "pageTitle": ".../About Me ...",
+      "description": "Hi, I'm Magda. I’m passionate about the world of <em>front-end</em> development, discovering something new every day. Working in this field presents <em>exciting challenges</em> that allow me to combine <em>creativity with functionality</em>. I love creating projects that not only look great but also offer <em>intuitive and thoughtful solutions</em>. It requires both analytical thinking and artistic approach. On a daily basis, I work with <em>Angular</em>, and in my spare time, I expand my skills by learning <em>React</em>, which helps me stay up-to-date with the latest front-end trends.",
+      "inProgress": "Currently Learning",
+      "technology": "Technologies I'm learning",
+      "work": "Work"
+    },
+    "hero": {
+      "description": "With a passion for creating <em>modern, creative, and functional</em> applications."
+    },
+    "projects": {
+      "pageTitle": "Selected Projects",
+      "0": {
+        "title": "My Portfolio Website",
+        "description": "A portfolio website built in React, inspired by a project from <em>https://www.behance.net</em>"
+      },
+      "1": {
+        "title": "Songs Book",
+        "description": "A guitar songbook, <em>with an admin option</em>, allowing the logged-in user to add, edit, or delete songs. It features a left sidebar from which you can add songs to the right panel, where there's a print-to-PDF option. Songs have a <em>chord transposition feature</em> and a search function."
+      },
+      "2": {
+        "title": "Background Catcher - mobile",
+        "description": "A <em>mobile</em> app for downloading and saving backgrounds on smartphones. This app is <em>integrated with the Unsplash API</em>, allowing you to get your favorite wallpapers by category, randomly, save and download them. The app is built using <em>Ionic-Angular</em> and leverages NGRX for practicing this library. Database - Firebase."
+      },
+      "3": {
+        "title": "Older Portfolio Site",
+        "description": "My <em>older version</em> of the portfolio website."
+      }
+    }
+  }
+  

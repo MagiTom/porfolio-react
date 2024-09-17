@@ -1,85 +1,82 @@
 @import "../../styles/mixins.scss";
 @import "../../styles/variables.scss";
-.hero{
+.hero {
+  p {
+    color: $color-accent;
+  }
 
-
-    p{
-       color: $color-accent;
-    }
-  
-i{
+  i {
     color: black;
-}
+  }
 
-&_header{
-    h1{
-        text-align: left;
-        margin: 0;
-        font-size: 2.5rem;
-        font-weight: 500;
+  &_header {
+    h1 {
+      text-align: left;
+      margin: 0;
+      font-size: 2.5rem;
+      font-weight: 500;
     }
-    h1:last-of-type{
-        margin-left: 2em;
+    h1:last-of-type {
+      margin-left: 2em;
     }
-}
+  }
 
-&_buttons{
+  &_buttons {
     display: flex;
     align-items: center;
     gap: 0.4em;
+  }
 }
 
-}
-
-@include lg{
-    .hero{
-        h1{
-            font-size: 3.5rem;
-            margin-right: 0.5em;
-        }
-        &_media{
-            justify-content: center;
-        }
+@include lg {
+  .hero {
+    h1 {
+      font-size: 3.5rem;
+      margin-right: 0.5em;
     }
+    &_media {
+      justify-content: center;
+    }
+  }
 }
 
 @include xl {
-    .hero {
-        &_header{
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: auto auto; 
-            grid-template-areas: "front btn"
-                                      "text dev";
-        }
-        h1:last-of-type{
-            margin-left: 0.5em;
-        }
-        h1{
-            font-size: 4.5rem;
-        }
-        h1:first-child{
-            grid-area: front;
-            margin-right: 0.5em;
-            white-space: nowrap;
-        }
-        &_buttons{
-            grid-area: btn;
-        }
-        p{
-            grid-area: text;
-        }
-        h1:last-child{
-            grid-area: dev;
-        }
+  .hero {
+    &_header {
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: auto auto;
+      grid-template-areas:
+        "front btn"
+        "text dev";
     }
-
-  }
-
-  @include xxl {
-    .hero {
-        &_header{
-            width: 70%;
-        }
+    h1:last-of-type {
+      margin-left: 0.5em;
+    }
+    h1 {
+      font-size: 4.5rem;
+    }
+    h1:first-child {
+      grid-area: front;
+      margin-right: 0.5em;
+      white-space: nowrap;
+    }
+    &_buttons {
+      grid-area: btn;
+    }
+    p {
+      grid-area: text;
+    }
+    h1:last-child {
+      grid-area: dev;
     }
   }
+}
+
+@include xxl {
+  .hero {
+    &_header {
+      width: 70%;
+    }
+  }
+}

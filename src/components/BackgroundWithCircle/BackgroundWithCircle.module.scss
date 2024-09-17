@@ -8,11 +8,10 @@
 
 .circle {
     position: absolute;
-    border: 1px solid $color-tertiary; /* Biały okrąg */
+    border: 1px solid $color-tertiary; 
     border-radius: 50%;
-    right: -50px; /* Przesunięcie okręgu poza ekran z prawej strony */
-    transform: translateY(-50%); /* Środek okręgu jest na pozycji top */
-    // z-index: -1;
+    right: -50px; 
+    transform: translateY(-50%); 
 }
 
 .content {

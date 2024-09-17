@@ -36,7 +36,6 @@ const EmploymentTable: React.FC = () => {
               {row.date} <br />
               <span>{row.years} years</span>{" "}
             </td>
-            {/* <td></td> */}
             <td className="table_company"><p>{row.company}</p><div className="table_position"><p>{row.position}</p><p>{row.stack}</p></div></td>
           </tr>
         ))}

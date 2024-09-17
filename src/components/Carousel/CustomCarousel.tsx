@@ -54,6 +54,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
       <Swiper
         onBeforeInit={onBeforeInit}
         grabCursor={true}
+        autoplay={true}
         slidesPerView={1}
         spaceBetween={30}
         centeredSlides={true}

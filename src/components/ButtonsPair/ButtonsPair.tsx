@@ -20,6 +20,6 @@ const ButtonsPair: React.FC<ButtonPropsPair> =(({onClick, web}) => {
   );
 });
 
-ButtonsPair.displayName = 'Button'; // Optional but helps in debugging
+ButtonsPair.displayName = 'Button'; 
 
 export default ButtonsPair;

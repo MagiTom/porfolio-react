@@ -1,4 +1,4 @@
-// SocialMediaButtons.tsx
+
 import React from "react";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -9,8 +9,6 @@ import media from "../../constans/links";
 import Button from "../Button/Button";
 import './SocialMedia.scss'
 
-
-// Typ dla social media linków
 interface SocialMediaLink {
   name: string;
   icon: JSX.Element;

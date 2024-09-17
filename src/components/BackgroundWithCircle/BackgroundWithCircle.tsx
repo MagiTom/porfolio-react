@@ -2,9 +2,9 @@ import React, { ReactNode } from 'react';
 import styles from './BackgroundWithCircle.module.scss';
 
 interface BackgroundWithCircleProps {
-    topPosition: string; // Pozycja 'top' dla okręgu
-    size?: string;       // Rozmiar okręgu, np. '200px'. Optional, z wartością domyślną.
-    children?: ReactNode; // Dzieci, które będą umieszczone w środku komponentu
+    topPosition: string; 
+    size?: string;       
+    children?: ReactNode; 
 }
 
 const BackgroundWithCircle: React.FC<BackgroundWithCircleProps> = ({ topPosition, size = '200px', children }) => {
@@ -16,7 +16,7 @@ const BackgroundWithCircle: React.FC<BackgroundWithCircleProps> = ({ topPosition
                     top: topPosition, 
                     width: size, 
                     height: size,
-                    right: `calc(-${size} / 2)` // Aby środek okręgu był po lewej stronie, zmieniamy także left
+                    right: `calc(-${size} / 2)` 
                 }}
             ></div>
             <div className={styles.content}>

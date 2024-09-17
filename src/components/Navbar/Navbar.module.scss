@@ -13,7 +13,7 @@
     font-family: $font-heading;
   }
 
-  i{
+  i {
     font-size: 1.5rem;
     @include md {
       display: none;
@@ -49,46 +49,47 @@
     li {
       margin-bottom: 2em;
       @include md {
-       margin: 0;
+        margin: 0;
       }
     }
   }
 
-
-  &_lang_mobile, &_lang_web {
+  &_lang_mobile,
+  &_lang_web {
     display: flex;
     justify-content: center;
     gap: 1.5em;
 
+    p:hover{
+      font-weight: bold;
+    }
+
     p:first-child {
-      border-right: 1px solid $color-secondary;
       padding-right: 1em;
       @include md {
-        border-right: none;
-        border-bottom: 1px solid $color-accent;
         margin-bottom: 0.5em;
-       }
+      }
     }
     @include md {
       flex-direction: column;
       gap: 0;
-      p{
+      p {
+        border-right: none;
         margin: 0;
         padding: 0 !important;
         text-align: center;
         color: $color-accent;
       }
-     }
-
+    }
   }
-  &_lang_web{
+  &_lang_web {
     display: none;
     cursor: pointer;
     @include md {
       display: flex;
     }
   }
-  &_lang_mobile{
+  &_lang_mobile {
     @include md {
       display: none;
       cursor: pointer;
@@ -103,15 +104,24 @@
 }
 
 .active {
-    display: block;
-  }
+  display: block;
+}
 
-  .marker{
-    position: absolute;
-    left: 0;
-    height: 4px;
-    background: white;
-    bottom: -2px;
-    transition: 0.5s;
-    border-radius: 4px;
+.marker {
+  position: absolute;
+  left: 0;
+  height: 4px;
+  background: white;
+  bottom: -2px;
+  transition: 0.5s;
+  border-radius: 4px;
+}
+
+.activeLang {
+  border-right: 1px solid $color-secondary;
+  font-weight: bolder;
+
+  @include md {
+    border-bottom: 1px solid $color-accent;
+  }
 }

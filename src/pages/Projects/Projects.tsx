@@ -6,6 +6,7 @@ import ButtonsPair from "../../components/ButtonsPair/ButtonsPair";
 import portfolio from "../../assets/portfolio.png";
 import songbook from "../../assets/songbook.png";
 import songbookimage from "../../assets/songbook-image.png";
+import portfolioImage from "../../assets/portfolio-image.png";
 import songbooklogin from "../../assets/songbook-login.png";
 import oldPortfolio from "../../assets/old-portfolio.png";
 import oldImage from "../../assets/old-image.png";
@@ -24,7 +25,7 @@ const Projects: React.FC = () => {
     <div className="project">
       <h4>.../{t('projects.pageTitle')}...</h4>
       <div className="project-list">
-        <BackgroundWithCircle topPosition="30%" size="250px">
+        <BackgroundWithCircle topPosition="90%" size="700px">
           <div className="project-item">
             <div className="project-description">
               <h3>{t(`${porfolioProject.title}`)}</h3>
@@ -44,14 +45,14 @@ const Projects: React.FC = () => {
                   <ButtonsPair web={true} onClick={() => window.open(porfolioProject.url, "_blank")}></ButtonsPair>
                 </div>
                 <img
-                  src={songbooklogin}
+                  src={portfolioImage}
                   alt=""
                 />
               </div>
               <div className="project-shapes" onClick={() => window.open(porfolioProject.url, "_blank")}>
                 <div className="project-rec">
                   <img
-                    src={songbookimage}
+                    src={portfolioImage}
                     alt=""
                   />
                 </div>
@@ -61,7 +62,7 @@ const Projects: React.FC = () => {
           </div>
         </BackgroundWithCircle>
 
-        <BackgroundWithCircle topPosition="30%" size="250px">
+      
           <div className="project-item reverse">
             <div className="project-description">
               <h3>{t(`${songBook.title}`)}</h3>
@@ -105,8 +106,8 @@ const Projects: React.FC = () => {
               </div>
             </div>
           </div>
-        </BackgroundWithCircle>
-        <BackgroundWithCircle topPosition="30%" size="250px">
+       
+        <BackgroundWithCircle topPosition="30%" size="300px">
           <div className="project-item">
             <div className="project-description">
               <h3>{t(`${backgroundCatcher.title}`)}</h3>
@@ -135,7 +136,7 @@ const Projects: React.FC = () => {
             </div>
           </div>
         </BackgroundWithCircle>
-        <BackgroundWithCircle topPosition="30%" size="250px">
+        <BackgroundWithCircle topPosition="30%" size="600px">
           <div className="project-item reverse">
             <div className="project-description">
               <h3>{t(`${oldPortfolioProject.title}`)}</h3>

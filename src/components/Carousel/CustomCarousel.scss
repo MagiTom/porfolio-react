@@ -28,6 +28,7 @@
     background: rgb(18,18,18);
     background: linear-gradient(270deg, rgba(18,18,18,0.8436624649859944) 5%, rgba(61,61,61,0) 46%, rgba(18,18,18,0.8772759103641457) 95%);
     z-index: 2;
+    pointer-events: none;
   }
   &_buttons{
     display: flex;
