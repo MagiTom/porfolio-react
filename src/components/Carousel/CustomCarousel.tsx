@@ -27,7 +27,7 @@ interface CarouselProps {
 }
 
 const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const navPrevButton = React.useRef<HTMLButtonElement>(null);
   const navNextButton = React.useRef<HTMLButtonElement>(null);
   const maxLength = 150;
@@ -44,7 +44,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
   const pagination = {
     clickable: true,
     renderBullet: function (index: number, className: string) {
-      return '<span class="' + className + '">' + "" + "</span>";
+      return `<span class="${className}"></span>`;
     },
   };
 

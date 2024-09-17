@@ -5,7 +5,7 @@ import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import "./Contact.scss";
 
 const Contact: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   return (
     <div className="contact">
       <h4>.../{t('navbar.contact')}...</h4>

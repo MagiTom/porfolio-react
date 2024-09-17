@@ -16,7 +16,7 @@ import "./Projects.scss";
 
 
 const Projects: React.FC = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
   const porfolioProject = projects[0];
   const songBook = projects[1];
   const backgroundCatcher = projects[2];

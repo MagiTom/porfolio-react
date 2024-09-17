@@ -7,7 +7,7 @@ import "./SplashScreen.scss";
 
 const SplashScreen: React.FC<{loading: boolean}> = ({loading}) => {
   const location = useLocation();
-  const { hash, pathname, search } = location;
+  const { pathname } = location;
   const [image, setImage] = useState<string>();
   console.log("pathname", pathname);
 

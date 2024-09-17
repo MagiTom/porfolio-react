@@ -11,9 +11,7 @@ import styles from "./Navbar.module.scss";
 gsap.registerPlugin(useGSAP);
 
 export const Navbar: React.FC = () => {
-  const aboutLinkRef = useRef<HTMLAnchorElement>(null);
   const [isOpen, setIsOpen] = useState(false);
-  const [target, setTarget] = useState<EventTarget & HTMLAnchorElement>();
   const { t, i18n } = useTranslation();
   const markerRef = useRef<HTMLDivElement>(null);
   const container = useRef<HTMLUListElement>(null);
@@ -68,8 +66,6 @@ export const Navbar: React.FC = () => {
   };
 
   const handleChangePage = (event: React.MouseEvent<HTMLAnchorElement>) => {
-    const target = event.currentTarget;
-    setTarget(target);
     setIsOpen(false);
   };
 
