@@ -13,7 +13,7 @@ const Projects: Project[] = [
     description: "projects.0.description",
     src: "portfolio-image.png",
     github: "https://github.com/MagiTom/portfolio-react",
-    url: "",
+    url: "https://magda-portfolio.netlify.app/",
     stack: ["React", "Typescript", "Swipper", "GSAP", "SASS"],
   },
   {
