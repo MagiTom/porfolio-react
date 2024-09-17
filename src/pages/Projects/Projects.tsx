@@ -1,18 +1,18 @@
 import React from "react";
-import "./Projects.scss";
+import { useTranslation } from "react-i18next";
+import oldImage from "../../assets/old-image.png";
+import oldPortfolio from "../../assets/old-portfolio.png";
+import oldProjects from "../../assets/old-projects.png";
+import portfolioImage from "../../assets/portfolio-image.png";
+import portfolio from "../../assets/portfolio.png";
+import songbookimage from "../../assets/songbook-image.png";
+import songbooklogin from "../../assets/songbook-login.png";
+import songbook from "../../assets/songbook.png";
 import BackgroundWithCircle from "../../components/BackgroundWithCircle/BackgroundWithCircle";
 import Button from "../../components/Button/Button";
 import ButtonsPair from "../../components/ButtonsPair/ButtonsPair";
-import portfolio from "../../assets/portfolio.png";
-import songbook from "../../assets/songbook.png";
-import songbookimage from "../../assets/songbook-image.png";
-import portfolioImage from "../../assets/portfolio-image.png";
-import songbooklogin from "../../assets/songbook-login.png";
-import oldPortfolio from "../../assets/old-portfolio.png";
-import oldImage from "../../assets/old-image.png";
-import oldProjects from "../../assets/old-projects.png";
 import projects from "../../constans/projects";
-import { useTranslation } from "react-i18next";
+import "./Projects.scss";
 
 
 const Projects: React.FC = () => {

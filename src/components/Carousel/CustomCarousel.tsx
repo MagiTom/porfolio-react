@@ -1,17 +1,17 @@
-import React, { useRef } from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import "swiper/css";
-import "swiper/css/pagination";
-import "swiper/css/navigation";
-import "./CustomCarousel.scss";
-import { Navigation, Pagination } from "swiper/modules";
-import Button from "../Button/Button";
 import EastIcon from "@mui/icons-material/East";
 import WestIcon from "@mui/icons-material/West";
-import SwiperCore from "swiper";
-import ButtonCircle from "../ButtonCircle/ButtonCircle";
-import { Project } from "../../constans/projects";
+import React from "react";
 import { useTranslation } from "react-i18next";
+import SwiperCore from "swiper";
+import "swiper/css";
+import "swiper/css/navigation";
+import "swiper/css/pagination";
+import { Navigation, Pagination } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+import { Project } from "../../constans/projects";
+import Button from "../Button/Button";
+import ButtonCircle from "../ButtonCircle/ButtonCircle";
+import "./CustomCarousel.scss";
 
 const importImage = (path: string) => {
   try {

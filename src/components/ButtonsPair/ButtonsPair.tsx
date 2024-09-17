@@ -1,10 +1,10 @@
-import React, { forwardRef } from 'react';
+import GitHubIcon from "@mui/icons-material/GitHub";
+import LanguageIcon from '@mui/icons-material/Language';
+import NorthEastIcon from "@mui/icons-material/NorthEast";
+import React from 'react';
 import { ButtonPropsPair } from '../../types/ButtonProps.model';
 import ButtonCircle from '../ButtonCircle/ButtonCircle';
-import GitHubIcon from "@mui/icons-material/GitHub";
-import NorthEastIcon from "@mui/icons-material/NorthEast";
-import LanguageIcon from '@mui/icons-material/Language';
-import './ButtonsPair.scss'
+import './ButtonsPair.scss';
 
 const ButtonsPair: React.FC<ButtonPropsPair> =(({onClick, web}) => {
 

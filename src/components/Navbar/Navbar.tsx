@@ -1,12 +1,12 @@
-import React, { useEffect, useRef, useState } from "react";
-import styles from "./Navbar.module.scss";
-import classNames from "classnames";
-import { Link, useLocation } from "react-router-dom";
-import BackgroundWithCircle from "../BackgroundWithCircle/BackgroundWithCircle";
-import { useTranslation } from "react-i18next";
-import { gsap, Power3 } from "gsap";
 import { useGSAP } from "@gsap/react";
+import classNames from "classnames";
+import { gsap, Power3 } from "gsap";
+import React, { useEffect, useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
+import { Link, useLocation } from "react-router-dom";
 import navItems, { NavItem } from "../../constans/navItems";
+import BackgroundWithCircle from "../BackgroundWithCircle/BackgroundWithCircle";
+import styles from "./Navbar.module.scss";
 
 gsap.registerPlugin(useGSAP);
 

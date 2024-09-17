@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import React, { useState } from "react";
 import { ButtonProps } from "../../types/ButtonProps.model";
 
 const Button: React.FC<ButtonProps> = ({ children, onClick, theme }) => {

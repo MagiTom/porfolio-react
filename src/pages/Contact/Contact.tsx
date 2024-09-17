@@ -1,8 +1,8 @@
-import React from "react";
-import SocialMedia from "../../components/SocialMedia/SocialMedia";
 import EmailIcon from '@mui/icons-material/Email';
-import "./Contact.scss";
+import React from "react";
 import { useTranslation } from "react-i18next";
+import SocialMedia from "../../components/SocialMedia/SocialMedia";
+import "./Contact.scss";
 
 const Contact: React.FC = () => {
   const { t, i18n } = useTranslation();

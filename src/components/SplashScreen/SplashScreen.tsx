@@ -1,9 +1,9 @@
 import React, { useEffect, useState } from "react";
-import "./SplashScreen.scss";
-import about from "../../assets/circle-about.svg";
-import projects from "../../assets/circle-projects.svg";
-import contact from "../../assets/circle-contact.svg";
 import { useLocation } from "react-router-dom";
+import about from "../../assets/circle-about.svg";
+import contact from "../../assets/circle-contact.svg";
+import projects from "../../assets/circle-projects.svg";
+import "./SplashScreen.scss";
 
 const SplashScreen: React.FC<{loading: boolean}> = ({loading}) => {
   const location = useLocation();
