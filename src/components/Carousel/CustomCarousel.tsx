@@ -59,6 +59,7 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
         spaceBetween={30}
         centeredSlides={true}
         pagination={pagination}
+        navigation={{ prevEl: navPrevButton.current, nextEl: navNextButton.current }}
         modules={[Pagination, Navigation]}
         breakpoints={{
           640: {
@@ -108,12 +109,16 @@ const CustomCarousel: React.FC<CarouselProps> = ({ items }) => {
       </Swiper>
 
       <div className="carousel_nav">
+        <span>
         <ButtonCircle ref={navPrevButton} theme="dark">
           <WestIcon style={{ color: "var(--theme-accent)", margin: "10px" }} />
         </ButtonCircle>
+        </span>
+        <span>
         <ButtonCircle theme="dark" ref={navNextButton}>
           <EastIcon style={{ color: "var(--theme-accent)", margin: "10px" }} />
         </ButtonCircle>
+        </span>
       </div>
     </div>
   );

@@ -118,8 +118,8 @@
 }
 
 .activeLang {
-  border-right: 1px solid $color-secondary;
   font-weight: bolder;
+  text-decoration: underline;
 
   @include md {
     border-bottom: 1px solid $color-accent;
