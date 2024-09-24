@@ -27,23 +27,27 @@ const About: React.FC = () => {
             <div className="about_img"></div>
           </Smooth>
           <div className="about_stack">
+            <div className="about_item">
+              <h4>Front-end</h4>
+              <p>
+                Javascript / Typesript / Angular / Ionic / Capacitor / Rxjs /
+                Ngrx / React / Redux / React Native / Git / Firebase / Sqlite
+              </p>
+            </div>
             <div className="about_wrapper">
               <div className="about_item--accent">
-                <h4>Front-end</h4>
+                <h4>Style</h4>
                 <p>
-                  Javascript / Typesript / Angular / Ionic / Capacitor / Rxjs /
-                  Ngrx / React / Redux / React Native / Git / Firebase / Sqlite
+                  Sass / Angular Material / Bootstrap / MUI / PrimeNg / Gsap /
+                  Chart.js
                 </p>
               </div>
               <ButtonsPair></ButtonsPair>
             </div>
 
             <div className="about_item">
-              <h4>Style</h4>
-              <p>
-                Sass / Angular Material / Bootstrap / MUI / PrimeNg / Gsap /
-                Chart.js
-              </p>
+              <h4>{t("about.other")}</h4>
+              <p>Git / Webpack / npm / Cypress / Scrum / Jira / Adobe XD</p>
             </div>
             <div className="about_wrapper">
               <div className="about_additional">

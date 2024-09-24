@@ -6,6 +6,11 @@
     color: $color-accent;
   }
 
+  &-intro{
+    width: 80%;
+    margin: 0 auto;
+  }
+
   &-list {
     display: flex;
     flex-direction: column;

@@ -9,6 +9,7 @@
       "description": "Hi, I'm Magda. I’m passionate about the world of <em>front-end</em> development, discovering something new every day. Working in this field presents <em>exciting challenges</em> that allow me to combine <em>creativity with functionality</em>. I love creating projects that not only look great but also offer <em>intuitive and thoughtful solutions</em>. It requires both analytical thinking and artistic approach. On a daily basis, I work with <em>Angular</em>, and in my spare time, I expand my skills by learning <em>React</em>, which helps me stay up-to-date with the latest front-end trends.",
       "inProgress": "Currently Learning",
       "technology": "Technologies I'm learning",
+      "other": "Other",
       "work": "Work"
     },
     "hero": {
@@ -16,6 +17,7 @@
     },
     "projects": {
       "pageTitle": "Selected Projects",
+      "intro": "Below are a few examples of my non-commercial projects, which I created for personal creative purposes.</br> In my commercial portfolio, you will find projects such as: comprehensive web and mobile solutions for a company that produces mattresses for <em>Ikea</em> stores, a warehouse management system connected to an online store, a <em>mobile app for managing car chargers</em>, as well as several smaller projects.",
       "0": {
         "title": "My Portfolio Website",
         "description": "A portfolio website built in React, inspired by a project from <em>https://www.behance.net</em>"

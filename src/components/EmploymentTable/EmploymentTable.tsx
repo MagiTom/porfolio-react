@@ -16,11 +16,11 @@ const EmploymentTable: React.FC = () => {
       years: 3.5,
       company: "Devqube sp. z o.o.",
       position: "Front-End Developer",
-      stack: "Angular",
+      stack: "Angular, Ionic",
     },
     {
       date: "2020 - 2021",
-      years: 1,
+      years: 0.5,
       company: "NordDigital, Brenna",
       position: "PRODUCT MANAGER",
       stack: "HTML, CSS",

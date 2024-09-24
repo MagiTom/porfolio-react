@@ -8,13 +8,15 @@
   "description": "Cześć, jestem Magda, Pasjonuję się światem <em>front-endu</em> i każdego dnia odkrywam w nim coś nowego. Praca w tej branży stawia przede mną <em>ekscytujące wyzwania</em>, które pozwalają mi łączyć <em>kreatywność z funkcjonalnością</em>. Uwielbiam tworzyć projekty, które nie tylko wyglądają świetnie, ale też oferują <em>intuicyjne i przemyślane rozwiązania</em>. Wymaga to zarówno analitycznego myślenia, jak i artystycznego podejścia. Na co dzień pracuję z <em>Angularem</em>, a po godzinach rozwijam się, korzystając z <em>Reacta</em>, dzięki czemu poszerzam swoje horyzonty i pozostaję na bieżąco z najnowszymi trendami w świecie front-endu.",
   "inProgress": "W trakcie nauki",
   "technology": "Technologie, których dopiero się uczę",
-  "work": "Praca"
+  "work": "Praca",
+  "other": "Inne"
 },
 "hero": {
   "description": "Z pasją do tworzenia <em>nowoczesnych, kreatywnych i funkcjonalnych</em> aplikacji."
 },
 "projects": {
   "pageTitle": "Wybrane Projekty",
+  "intro": "Poniżej prezentuję kilka przykładów moich niekomercyjnych projektów, które stworzyłam dla własnych celów twórczych.</br> W moim portfolio komercyjnym znajdują się m.in. projekty takie jak: kompleksowe rozwiązania webowe i mobilne dla firmy produkującej materace do sklepów <em>Ikea</em>, system do zarządzania magazynem powiązanym ze sklepem internetowym, <em>aplikacja mobilna do obsługi ładowarek samochodowych</em>, a także kilka mniejszych projektów.",
   "0": {
     "title": "Moja strona portfolio",
     "description": "Strona portfolio napisana w React, inspirowana projektem ze strony <em>https://www.behance.net</em>"

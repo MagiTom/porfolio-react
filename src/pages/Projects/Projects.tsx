@@ -26,6 +26,13 @@ const Projects: React.FC = () => {
   return (
     <div className="project">
       <h4>.../{t("projects.pageTitle")}...</h4>
+      <div className="project-intro">
+        <p
+          dangerouslySetInnerHTML={{
+            __html: t("projects.intro"),
+          }}
+        />
+      </div>
       <div className="project-list">
         <BackgroundWithCircle topPosition="90%" size="700px">
           <div className="project-item">
